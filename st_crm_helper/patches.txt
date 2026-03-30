@@ -1,0 +1,3 @@
+# Patches are listed here in the format:
+# app_name.module_name.patch_name
+# Example: st_crm_helper.patches.v1_0.some_patch
