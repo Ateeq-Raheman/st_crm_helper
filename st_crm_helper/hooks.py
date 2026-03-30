@@ -18,7 +18,17 @@ fixtures = [
 ]
 
 # ─── Include JS in Desk (applies globally to all desk pages) ──────────────────
-app_include_js = "/assets/st_crm_helper/js/department_filter.js"
+app_include_js = [
+	"/assets/st_crm_helper/js/department_filter.js",
+	"/assets/st_crm_helper/js/crm_dashboard_dept.js",
+]
+
+# ─── Override whitelisted methods — dashboard department filtering ─────────────
+# These redirect CRM dashboard API calls through our department-aware wrappers.
+override_whitelisted_methods = {
+	"crm.api.dashboard.get_dashboard": "st_crm_helper.api.dashboard.get_dashboard",
+	"crm.api.dashboard.get_chart":     "st_crm_helper.api.dashboard.get_chart",
+}
 
 # ─── DocType JS — list views ──────────────────────────────────────────────────
 doctype_list_js = {
