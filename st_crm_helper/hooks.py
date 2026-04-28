@@ -19,7 +19,8 @@ fixtures = [
 
 # ─── Include JS in Desk (applies globally to all desk pages) ──────────────────
 app_include_js = [
-	"/assets/st_crm_helper/js/st_crm_helper.min.js",
+	"/assets/st_crm_helper/js/department_filter.js",
+	"/assets/st_crm_helper/js/crm_dashboard_dept.js",
 ]
 
 # ─── Override whitelisted methods — dashboard department filtering ─────────────

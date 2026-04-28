@@ -1,6 +1,0 @@
-{
-    "st_crm_helper.min.js": [
-        "st_crm_helper/public/js/department_filter.js",
-        "st_crm_helper/public/js/crm_dashboard_dept.js"
-    ]
-}
