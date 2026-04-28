@@ -23,6 +23,11 @@ app_include_js = [
 	"/assets/st_crm_helper/js/crm_dashboard_dept.js",
 ]
 
+web_include_js = [
+	"/assets/st_crm_helper/js/department_filter.js",
+	"/assets/st_crm_helper/js/crm_dashboard_dept.js",
+]
+
 # ─── Override whitelisted methods — dashboard department filtering ─────────────
 # These redirect CRM dashboard API calls through our department-aware wrappers.
 override_whitelisted_methods = {
