@@ -89,5 +89,8 @@ doc_events = {
 }
 
 # ─── After Install / Migrate ──────────────────────────────────────────────────
+base_template_hook = "st_crm_helper.hooks_utils.inject_scripts"
+
+# ─── After Install / Migrate ──────────────────────────────────────────────
 after_install = "st_crm_helper.install.after_install"
 after_migrate = ["st_crm_helper.install.after_migrate"]
